@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#57768A"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageHinh"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tenkhoahoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên khoa học"
+                android:textColor="#ED0909"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageHinh"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/tn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageHinh"
+                app:layout_constraintTop_toBottomOf="@+id/tenkhoahoc"
+                app:layout_constraintVertical_bias="0.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tenthuonggoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Tên thường gọi"
+                    android:textColor="#0DDC82"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/maula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Màu lá"
+                android:textColor="#0DDC82"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/tn"
+                app:layout_constraintStart_toEndOf="@+id/imageHinh"/>
+
+            <TextView
+                android:id="@+id/chuY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Chú ý"
+                android:textColor="#0DDC82"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/maula"
+                app:layout_constraintStart_toEndOf="@+id/imageHinh"/>
+
+            <TextView
+                android:id="@+id/sosao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Đặc tính"
+                android:textColor="#CDDC39"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/chuY"
+                app:layout_constraintStart_toEndOf="@+id/imageHinh"/>
+
+            <TextView
+                android:id="@+id/congdung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Công dụng"
+                android:paddingRight="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="9dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/sosao"
+                app:layout_constraintStart_toEndOf="@+id/imageHinh"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

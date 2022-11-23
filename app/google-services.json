@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "408295005372",
+    "project_id": "baikt2-9015c",
+    "storage_bucket": "baikt2-9015c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408295005372:android:556294a6fd98fc3b38c4b9",
+        "android_client_info": {
+          "package_name": "com.example.bkt2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408295005372-42b05lri92gvt89dv0tbjplfpuud7c6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bkt2",
+            "certificate_hash": "4ebca88ecd9f00ca89c5426f8eeb634412e67dce"
+          }
+        },
+        {
+          "client_id": "408295005372-oaams5s4ej8l9mgtipbvg18g95rht706.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8C_rKZFrzH-r3g3hEYpcDKG0bxDgmprc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408295005372-oaams5s4ej8l9mgtipbvg18g95rht706.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

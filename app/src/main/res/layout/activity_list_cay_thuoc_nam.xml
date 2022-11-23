@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListCayThuocNam"
+    android:background="@drawable/background1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Cây thuốc nam"
+            android:id="@+id/tenDS"
+            android:textStyle="bold"
+            android:textColor="#615C84"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints" />
+
+        <ListView
+            android:layout_below="@+id/tenDS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvCayXanh"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvlistcayxanh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tenDS"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
